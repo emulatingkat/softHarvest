@@ -18,3 +18,30 @@ barcodes = ["39002076606962", "39002046083961", "39002067185075"]
 for barcode in barcodes:
     baseurl+= barcode
     print(url)
+
+files ={}
+
+
+folders = {}
+
+
+
+newFolders = {}
+
+
+
+MDoutput = ""
+
+
+
+tempDir = "tempMFHDDownloadDir"
+
+
+
+outDir = "tempoutput"
+
+r = requests.get('http://deleon.library.yale.edu:9090/VoySearch/GetMfhdItem?barcode=39002067185075')
+
+r.status_code
+
+print(r.text)
