@@ -45,3 +45,5 @@ r = requests.get('http://deleon.library.yale.edu:9090/VoySearch/GetMfhdItem?barc
 r.status_code
 
 print(r.text)
+
+#now i need to save the bibid? 4282170 for this record?
